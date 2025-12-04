@@ -12,6 +12,7 @@ export default class Courses extends React.Component {
         })
         .then(courses =>{
             console.log('courses', courses)
+            this.setState({courses})
         })
         .catch(console.warn)
     }

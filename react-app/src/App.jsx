@@ -5,6 +5,7 @@ import './App.css'
 import Cats from './Cats'
 import Dogs from './Dogs'
 import Courses from './Courses'
+import Users from './Users'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,10 @@ function App() {
       <h1>Heroku MySQL Courses</h1>
       <div className="card">
         <Courses />
+      </div>
+      <h1>Firabase Users</h1>
+      <div className="card">
+        <Users />
       </div>
       
     </>

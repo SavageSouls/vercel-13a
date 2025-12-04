@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Cats from './Cats'
 import Dogs from './Dogs'
+import Courses from './Courses'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,10 @@ function App() {
       <h1>Supabase Dogs</h1>
       <div className="card">
         <Dogs />
+      </div>
+      <h1>Heroku MySQL Courses</h1>
+      <div className="card">
+        <Courses />
       </div>
       
     </>

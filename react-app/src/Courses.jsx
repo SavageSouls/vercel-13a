@@ -6,10 +6,14 @@ export default class Courses extends React.Component {
 
     componentDidMount(){
         fetch('/api/heroku-mysql-courses')
-        .then(res => res.json())
-        .then(courses =>{
-            
+        .then(res => {
+            console.log('res', res)
+            return res.json()
         })
+        .then(courses =>{
+            console.log('courses', courses)
+        })
+        .catch(console.warn)
     }
 
     render(){
